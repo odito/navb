@@ -19,20 +19,24 @@ handleToggle=()=>{
     });
 }
 
-closeLink=(pen)=>{
+closeLink=()=>{
    this.setState({
        isOpen:false,
-       open:false
+       open:!this.state.open
    })
 
 //    in order to close the submenu menu after @media width of 664px
-   setTimeout(() => {
-    this.setState({
-      open:false  
-    })
-   }, 1000);
+//    setTimeout(() => {
+//     this.setState({
+//       open:false  
+//     })
+//    }, 1000);
 
 }
+
+
+
+
 
 
 componentDidMount(){
