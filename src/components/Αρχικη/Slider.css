@@ -1,0 +1,245 @@
+
+
+.each-slide{
+    min-height: 60vh;
+    margin:0 auto;
+    position: relative;
+    width:100%;
+   
+}
+
+/* .each-slide img{
+    width: 100%;
+} */
+
+ .img{
+    width:100%;
+    min-height: 60vh;
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    background-position: 100% 100%;
+}
+
+.slides-texts{
+    min-height: inherit;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.welcome{
+  text-align:  center;
+  color:rgb(224,224,219);
+  
+}
+
+.welcome h1, 
+.welcome h2
+{
+   text-shadow: 2px 1px 0 rgb(49, 49, 49);
+}
+
+.offers h2{
+    text-align: center;
+    text-decoration: underline;
+    color: #fff;
+}
+
+.egatastaseis p{
+    font-size: 20px;
+    background:rgba(0,0,0,0.4);
+    margin:5px auto;
+    width:320px;
+    padding: 2px 2px 2px 5px;
+    font-style: italic;
+    color: #fff;
+    font-weight:600 ;
+}
+
+.egatastaseis p .fas{
+   margin-right: 10px;
+   text-align: left;
+}
+
+.egatastaseis p .fa-solar-panel{
+   color:rgb(23,131,167);
+
+ }
+
+ .egatastaseis p .fa-plug{
+    color:yellow;
+  }
+
+  .egatastaseis p .fa-video{
+    color:rgb(21,204,119);
+  }
+
+  .egatastaseis p .fa-briefcase{
+    color:rgb(23,131,167);
+  }
+
+  /* sliders banner */
+
+  .banner-center{
+      display: flex;
+      width: 100%;
+      min-height: inherit;
+      justify-content: center;
+     
+   
+  }
+  .banner{
+   text-align: center;
+  margin-top: 60px;
+ 
+  }
+
+  .banner h1, 
+  .banner h2
+  {
+     text-shadow: 2px 1px 0 rgb(49, 49, 49);
+     color:#e7e6e6;
+  }
+
+  .banner-btn{
+      margin-top: 20px;
+  }
+
+  .banner-btn button{
+      font-size: 18px;
+      padding:5px 10px;
+      border:1px solid #fff;
+      outline: none;
+      background: rgba(0,0,0,0.4);
+      color: #fff;
+      transition: all 0.5s ease-in-out;
+  }
+
+  .banner-btn button:hover{
+  
+    border:1px solid teal;
+    background: teal;
+    color: #fff;
+    transition: all 0.5s ease-in-out;
+    cursor: pointer;
+}
+
+
+
+
+
+
+
+@media screen and (min-width:664px){
+    .each-slide{
+        height: 80vh;
+        margin:0 auto;
+        position: relative;
+        width:100%;
+    }
+
+    .img{
+        width:100%;
+        min-height: 80vh;
+        background-size: 100% 100%;
+        background-repeat: no-repeat;
+        background-position: 100% 100%;
+    }
+
+    .welcome h1,
+    .banner h1
+    {
+       font-size: 45px; 
+       text-shadow: 2px 1px 0 rgb(49, 49, 49);
+    }
+
+    .welcome h2,
+    .banner h2{
+       font-size: 30px; 
+    }
+
+
+
+    .egatastaseis p{
+        font-size: 25px;
+        background:rgba(0,0,0,0.4);
+        margin:5px auto;
+        width:360px;
+     
+    }
+
+ 
+
+    .banner{
+        text-align: center;
+       margin-top: 100px;
+       
+      
+       }
+
+
+}
+
+
+
+
+
+@media screen and (min-width:968px){
+
+    .slides-texts{
+        min-height: inherit;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        
+    }
+
+    .img{
+        /* min-height: 100vh; */
+        background-size: 100% 100%;
+        background-repeat: no-repeat;
+        background-position: 100% 100%;
+        /* background-attachment: fixed; */
+        
+    }
+
+   
+
+    .egatastaseis{
+   
+     display: flex;
+     flex-wrap: wrap;
+     justify-content: center;
+     /* display: grid;
+     grid-template-columns: 1fr 1fr ;
+     gap: 10px 20px; */
+   max-width: 900px;
+    }
+
+    .egatastaseis p{
+        margin:10px 20px;
+        text-align: center;
+        width:370px;
+    }
+
+}
+
+@media screen and (min-width:1300px){
+    .each-slide{
+        height:90vh;
+     
+    }
+    .img{
+        min-height: 90vh;
+        background-size: 100% 100%;
+        background-repeat: no-repeat;
+        background-position: 100% 100%;
+    }
+}
+
+
+
+
+
+

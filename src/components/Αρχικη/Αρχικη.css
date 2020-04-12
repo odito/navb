@@ -1,0 +1,175 @@
+
+.erga-center{
+    padding:10px 0;
+   
+ 
+}
+.erga-center .erga-shetika{
+    border:1px solid lightgray;
+    padding:10px;
+    background: rgb(241, 240, 240);
+    border-radius: 5px;
+}
+
+.erga-shetika .shetika-icons{
+  text-align: center;
+  border-bottom: 1px solid lightgray;
+}
+
+.shetika-icons p{
+  font-size: 20px;
+  letter-spacing: 0.2rem;
+  color: #424242;
+}
+
+.shetika-icons .fa-users{
+    margin:10px;
+    font-size: 35px;
+    color: #fff;
+    background: dodgerblue;
+    padding:10px;
+    border-radius: 50%;
+   
+
+}
+
+.shetika-texts{
+    margin-top: 10px;
+}
+
+.shetika-texts ol{
+    margin:10px 0;
+    
+}
+
+.shetika-texts li{
+ list-style: none;
+
+}
+
+
+
+
+
+.shetika-texts li a{
+   color: dodgerblue;
+   margin:5px;
+   display: inline-block;
+   text-decoration: none;
+   font-style: italic;
+   transition: all 0.5s ease-in-out;
+   padding: 5px;
+   }
+
+   .shetika-texts li a:hover{
+    color: rgb(11, 103, 194);
+    margin:5px;
+    display: inline-block;
+    text-decoration: none;
+    font-style: italic;
+   box-shadow: 1px 1px 4px 1px dodgerblue;
+    }
+
+    .erga-shetika button{
+        background: teal;
+        outline: none;
+        border:1px solid transparent;
+        color: lightgrey;
+        padding: 5px 15px;
+        font-size: 18px;
+    }
+
+    .erga-shetika .perissotera{
+        width: 100%;
+      
+    }
+
+    .erga-shetika button{
+        background: teal;
+        outline: none;
+        border:1px solid transparent;
+        color: lightgrey;
+        padding: 5px 15px;
+        font-size: 18px;
+        cursor: pointer;
+        text-align: center;
+        transition: all 0.5s ease-in-out;
+    }
+
+    .erga-shetika button:hover{
+        background: transparent;
+        border:1px solid teal;
+        color: #323232;
+        cursor: pointer;
+        text-align: center;
+    }
+
+    .gallery-wrapper{
+         
+       overflow: hidden;   
+       
+       
+    }
+
+    .erga-gallery{
+        margin-top: 30px;
+      
+      
+    }
+
+
+
+    @media screen and (min-width:664px){
+     
+        .erga-center{
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+           
+        }
+
+        .erga-shetika{
+            flex:0 0 calc(42% - 20px);
+            align-self: flex-start;
+            font-size: 18px;
+        }
+
+
+        .erga-gallery{
+            flex:0 0 calc(58%);
+         
+            margin-top: 0;
+            
+        }
+     
+
+    }
+
+    @media screen and (min-width:964px){
+     
+        .erga-center{
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+        }
+
+        .erga-shetika{
+            flex:0 0 calc(31% - 20px);
+            
+        }
+        .erga-gallery{
+            flex:0 0 69%;
+            /* border:1px solid green; */
+            
+            
+        }
+
+    }
+
+    
+
+
+
+
+
+

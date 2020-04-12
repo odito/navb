@@ -1,0 +1,291 @@
+*{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+@import url('https://fonts.googleapis.com/css?family=Roboto&display=swap');
+
+
+
+nav{
+    position: sticky;
+   
+    max-width: 1400px;
+    width: 100%;
+    z-index: 20;
+    margin: 0 auto;
+    font-family: 'Roboto', sans-serif;
+}
+
+.scrollNav{
+    position: fixed;
+    top:0; 
+  
+}
+
+/* sticky? */
+
+.logoImg{
+    width:140px;
+    position: relative;
+     top:2px; 
+}
+
+.fix{
+  top: initial;
+ 
+
+  background: rgba(0,0,0,0.4); 
+  height: 100%;
+ 
+  width: 100%;
+ 
+ 
+ 
+}
+
+ul{
+    list-style: none;
+}
+nav ul li a{
+    padding: 12px 15px;
+    display: block;
+    color: rgb(187,184,184);
+    text-decoration: none;
+    transition: all 1s ease; 
+    /* border-bottom: 1px solid grey; */
+}
+nav ul li a:hover{
+    padding: 12px 25px;
+    color: rgb(204,178,29);
+   
+}
+nav li{
+    position: relative;
+}
+nav li ul.submenu{
+    display: none;
+    animation: example1;
+    animation-duration: 0.5s;
+}
+
+@keyframes example1{
+    0%{
+        transform: translateY(30px);
+    }
+    100%{
+        transform: translateY(0px);
+    }
+}
+
+nav li:hover ul.submenu{
+    display: block;
+    z-index:3;
+}
+nav ul.submenu li a{
+    background: #05415e;
+    border-bottom: 1px solid grey;
+}
+/* nav ul li a:hover{
+    background: #022a3d;
+} */
+
+nav ul.submenu li a:hover{
+    background: #022a3d;
+    z-index: 3;
+}
+.bar1,
+.bar2,
+.bar3{
+    background: grey;
+    width:30px;
+    height: 3px;
+    margin:4px;
+    transition: all 1s ease;
+}
+.actBars .bar1{
+    transform: rotate(-45deg) translate(-4px,5px);
+}
+.actBars .bar2{
+    opacity:0;
+}
+.actBars .bar3{
+    transform: rotate(45deg) translate(-4px, -5px);
+}
+.btn{
+    border: 1px solid grey;
+    display: inline;
+    align-self: center;
+    cursor: pointer;
+    transition: all 1s ease;
+}
+.btnAnim{
+    transform: rotate(360deg);
+}
+.logoBtn{
+    display: flex;
+    justify-content: space-between;
+    padding:5px 10px;
+    background: #043850;
+    border-bottom: 1px solid #fff;
+}
+.links{
+    background: #043850;
+    height: 100vh;
+    overflow: hidden;
+    transition: all 1s ease;
+    position: absolute;
+    width: 80%;
+    left:-100%; 
+    z-index: 10;
+    right:0; 
+    margin:0;
+}
+.openLinks{
+    position: absolute;
+   
+    left:0;
+    width: 80%;
+    right: 0;
+    z-index:10;
+    height: 100vh;
+}
+
+.newSubmenu{
+    display: none;
+    overflow: hidden;
+  }
+
+@media screen and (min-width:664px){
+ .logoImg{
+    width:140px;
+position: relative;
+ top:2px; 
+ }
+ .btn{
+     display: none;
+ }
+
+ .fix{
+  
+    background: none; 
+    height: auto;
+    position: relative;
+    width:initial;
+  
+   
+   
+  }
+
+
+ .links{
+     position: relative;
+     height: auto;
+     overflow: visible;
+     left:auto;
+     width: 100%;
+     display: flex;
+     justify-content: space-between;
+     transition: all 0s ease;
+     right: 10px;
+ }
+ .openLinks{
+     height: auto;
+     position: relative;
+     left:auto;
+     z-index: 10;
+     width: auto;
+     right: 10px;
+     top:auto;
+ }
+ .logoBtn{
+     border-bottom: transparent;
+ }
+ nav ul li a{
+     background: #043850;
+     padding: 12px 8px;
+     font-size: 18px;
+    
+ }
+ nav ul li a:hover{
+    
+    padding: 12px 8px;
+}
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #043850;
+}
+
+nav li{
+    position: relative;
+}
+nav li .submenu{
+    position: absolute;
+    display: block;
+}
+nav li:hover .submenu{
+   
+    display: block;
+    width: 190px;
+    padding-top:7px;
+
+}
+ul.submenu li{
+    list-style: none;
+}
+ul.submenu li a{
+   background: #043850;
+   padding: 8px 15px;
+   border-bottom: 1px solid grey;
+}
+ul.submenu li a:hover{
+    background: #022a3d;
+    padding: 8px 25px;
+  
+ }
+
+ .newSubmenu{
+    display: auto;
+    overflow: hidden;
+  }
+ 
+}
+
+@media screen and (min-width:680px){
+    .links{
+     
+        right: 30px;
+    }
+    nav ul li a{
+        background: #043850;
+        padding: 12px 15px;
+        transition: all 0.5s ease;
+    }
+    nav ul li a:hover{
+        background: #043850;
+        padding: 12px 15px;
+        color:rgb(204,178,29);
+    }
+
+    .newSubmenu{
+      display: none;
+    }
+
+
+}
+
+@media screen and (min-width:750px){
+    .links{
+     
+        right: 90px;
+    }
+
+ .newSubmenu{
+    display: auto;
+    overflow: hidden;
+  }
+}
+
