@@ -20,19 +20,31 @@ handleToggle=()=>{
 }
 
 closeLink=()=>{
+
+
+
    this.setState({
        isOpen:false,
        open:!this.state.open
+   
    })
 
+ 
+
+
+
 //    in order to close the submenu menu after @media width of 664px
-//    setTimeout(() => {
-//     this.setState({
-//       open:false  
-//     })
-//    }, 1000);
+   setTimeout(() => {
+    this.setState({
+      open:true  
+    })
+   }, 7000);
+
 
 }
+
+
+ 
 
 
 
@@ -70,6 +82,9 @@ componentWillUnmount(){
 
 
     render() {
+
+        console.log(this.state.open);
+        
         return (
             <nav className={this.state.headerShow ?'scrollNav':''}>
                 <div className="logoBtn">
@@ -91,9 +106,13 @@ componentWillUnmount(){
                         <li><Link to="/"  onClick={this.closeLink}>Αρχική</Link></li>
                         <li><Link to="/σχετικα" onClick={this.closeLink} >Σχετικά</Link></li>
                         <li><Link to="#">Υπηρεσιες <span><i className="fas fa-angle-down"></i></span></Link>
-                        <ul className={this.state.open?"submenu ":' newSubmenu '} onClick={this.closeLink} >
-                            <li><Link to="/ηλεκτρολογικα" onClick={this.closeLink}  className="first">Ηλεκτρολογικά</Link></li>
-                            <li><Link to="/φωτοβολταϊκα" onClick={this.closeLink} >Φωτοβολταϊκά</Link></li>
+                        <ul className={this.state.open?"submenu ":' newSubmenu '}  >
+                            <li><Link to="/ηλεκτρολογικα" 
+                            onClick={this.closeSingle}
+                            onClick={this.closeLink}  className="first">Ηλεκτρολογικά</Link></li>
+                            <li><Link to="/φωτοβολταϊκα"
+                             onClick={this.closeSingle}
+                            onClick={this.closeLink} >Φωτοβολταϊκά</Link></li>
                             <li><Link to="/πιστοποιητικα" onClick={this.closeLink} >Πιστοποιητικά</Link></li>
                             <li><Link to="/συστ_ασφαλειας" onClick={this.closeLink}>Συστ. ασφαλείας</Link></li>
                             <li><Link to="/βλαβες" onClick={this.closeLink} >Βλάβες</Link></li>
