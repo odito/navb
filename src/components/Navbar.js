@@ -25,7 +25,7 @@ closeLink=()=>{
 
    this.setState({
        isOpen:false,
-       open:!this.state.open
+       open:true
    
    })
 
@@ -34,16 +34,25 @@ closeLink=()=>{
 
 
 //    in order to close the submenu menu after @media width of 664px
-   setTimeout(() => {
-    this.setState({
-      open:true  
-    })
-   }, 7000);
+//    setTimeout(() => {
+//     this.setState({
+//         open:false
+//     })
+//    }, 1000);
 
 
 }
 
 
+closeSub=()=>{
+
+  
+    this.setState({
+       
+        open:!this.state.open
+    
+    })
+}
  
 
 
@@ -101,11 +110,11 @@ componentWillUnmount(){
                     </div>
                 </div>
 
-                <div className={this.state.isOpen?"fix":'undefined'} onClick={this.closeLink}>
+                <div className={this.state.isOpen?"fix":'undefined'} >
                     <ul className={this.state.isOpen ?" links openLinks":"links undefined"}>
                         <li><Link to="/"  onClick={this.closeLink}>Αρχική</Link></li>
                         <li><Link to="/σχετικα" onClick={this.closeLink} >Σχετικά</Link></li>
-                        <li><Link to="#">Υπηρεσιες <span><i className="fas fa-angle-down"></i></span></Link>
+                        <li onClick={this.closeSub}><Link to="#">Υπηρεσιες <span><i className="fas fa-angle-down" ></i></span></Link>
                         <ul className={this.state.open?"submenu ":' newSubmenu '}  >
                             <li><Link to="/ηλεκτρολογικα" 
                             onClick={this.closeSingle}
