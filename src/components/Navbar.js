@@ -28,7 +28,7 @@ closeLink=(pen)=>{
 //    in order to close the submenu menu after @media width of 664px
    setTimeout(() => {
     this.setState({
-      open:true  
+      open:false  
     })
    }, 1000);
 
