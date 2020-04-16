@@ -21,17 +21,11 @@ handleToggle=()=>{
 
 closeLink=()=>{
 
-
-
    this.setState({
        isOpen:false,
        open:true
    
    })
-
- 
-
-
 
 //    in order to close the submenu menu after @media width of 664px
 //    setTimeout(() => {
@@ -40,18 +34,12 @@ closeLink=()=>{
 //     })
 //    }, 1000);
 
-
 }
 
-
 closeSub=()=>{
-
-  
     this.setState({
-       
-        open:!this.state.open
-    
-    })
+       open:!this.state.open
+  })
 }
  
 
