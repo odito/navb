@@ -17,13 +17,13 @@ nav{
     margin: 0 auto;
     font-family: 'Roboto', sans-serif;
     -webkit-overflow-scrolling: touch;
-  
+  overflow: hidden;
 }
 
 .scrollNav{
     position: fixed;
     top:0; 
-  
+  overflow: hidden;
     -webkit-overflow-scrolling: touch;
     backface-visibility: hidden;
     -webkit-backface-visibility: hidden;
